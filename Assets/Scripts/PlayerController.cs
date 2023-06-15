@@ -12,6 +12,9 @@ public class PlayerController : MonoBehaviour
     //game area in x range
     private float xRange = 10;
 
+    //Bullet Gameobject
+    public GameObject projectilePrefab;
+
     // Start is called before the first frame update
     void Start()
     {
