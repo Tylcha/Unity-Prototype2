@@ -661,6 +661,24 @@ MonoBehaviour:
   horizontalInput: 0
   speed: 10
   projectilePrefab: {fileID: 6511421546789672070, guid: 5140c3a3cb8af0844800c74d2cb1d09f, type: 3}
+--- !u!1 &2034346091 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7628960905064886745, guid: 8a405722576adc9439c3996f87f34f44, type: 3}
+  m_PrefabInstance: {fileID: 7628960903576000946}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2043831159
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2034346091}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2127499029
 GameObject:
   m_ObjectHideFlags: 0
