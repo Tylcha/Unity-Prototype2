@@ -7,6 +7,9 @@ public class DestroyOutOFBounds : MonoBehaviour
     //z ggame area field variable
     private float topBound = 30;
 
+    //z game area field variable for animals
+    private float downAnimals = -10;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +21,10 @@ public class DestroyOutOFBounds : MonoBehaviour
     {
         //delete gameobject if pass the field(game area)
         if (transform.position.z > topBound)
+        {
+            Destroy(gameObject);
+        }
+        else if (transform.position.z < downAnimals)
         {
             Destroy(gameObject);
         }
