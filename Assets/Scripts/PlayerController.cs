@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float horizontalInput;
+    public float verticalInput;
 
     //movement speed
     public float speed = 10;
@@ -25,9 +26,13 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         horizontalInput = Input.GetAxis("Horizontal");
+        verticalInput = Input.GetAxis("Vertical");
 
         //move the player right left
         transform.Translate(Vector3.right * Time.deltaTime * horizontalInput * speed);
+
+        //move the up down
+        transform.Translate(Vector3.forward * Time.deltaTime * speed * verticalInput);
 
         //keep the player inbounds (game area)
         //if -10: stay.x = -10, current.y, current.z
