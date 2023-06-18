@@ -24,6 +24,10 @@ public class DestroyOutOFBounds : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        else if (transform.position.x > 26 || transform.position.x < -26)
+        {
+            Destroy(gameObject);
+        }
         else if (transform.position.z < downAnimals)
         {
             Debug.Log("Game over");
