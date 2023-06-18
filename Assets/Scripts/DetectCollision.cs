@@ -17,7 +17,12 @@ public class DetectCollision : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
+        if (other.gameObject.tag == "animal")
+        {
+            FindObjectOfType<ScoreManager>().IncreaseScore();
+        }
         Destroy(gameObject);
         Destroy(other.gameObject);
+        
     }
 }
